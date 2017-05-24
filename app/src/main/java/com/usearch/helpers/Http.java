@@ -1,6 +1,6 @@
-package com.example.marcelo.usearch10.helpers;
+package com.usearch.helpers;
 
-import com.example.marcelo.usearch10.interfaces.ResponseCallBack;
+import com.usearch.interfaces.ResponseCallBack;
 
 import org.json.JSONObject;
 

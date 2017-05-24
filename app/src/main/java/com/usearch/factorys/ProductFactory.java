@@ -1,7 +1,7 @@
-package com.example.marcelo.usearch10.factorys;
+package com.usearch.factorys;
 
 
-import com.example.marcelo.usearch10.interfaces.ResponseCallBack;
+import com.usearch.interfaces.ResponseCallBack;
 
 import org.json.JSONObject;
 

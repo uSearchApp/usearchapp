@@ -1,9 +1,9 @@
-package com.example.marcelo.usearch10;
+package com.usearch;
 
 import android.app.Application;
 import android.os.Bundle;
 
-import com.example.marcelo.usearch10.helpers.VolleyQueue;
+import com.usearch.helpers.VolleyQueue;
 
 import io.realm.Realm;
 import io.realm.RealmConfiguration;

@@ -1,4 +1,4 @@
-package com.example.marcelo.usearch10.helpers;
+package com.usearch.helpers;
 
 import android.support.annotation.Nullable;
 import java.util.ArrayList;

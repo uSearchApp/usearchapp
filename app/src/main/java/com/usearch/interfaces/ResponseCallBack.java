@@ -1,4 +1,4 @@
-package com.example.marcelo.usearch10.interfaces;
+package com.usearch.interfaces;
 
 import org.json.JSONObject;
 

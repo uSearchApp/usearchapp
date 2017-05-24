@@ -1,4 +1,4 @@
-package com.example.marcelo.usearch10;
+package com.usearch;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -18,9 +18,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.example.marcelo.usearch10.R;
-import com.example.marcelo.usearch10.dialogs.DialogProductConfirm;
-import com.example.marcelo.usearch10.helpers.Extract;
+import com.usearch.R;
+import com.usearch.dialogs.DialogProductConfirm;
+import com.usearch.helpers.Extract;
 import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.TextBlock;

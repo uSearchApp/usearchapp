@@ -1,4 +1,4 @@
-package com.example.marcelo.usearch10;
+package com.usearch;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

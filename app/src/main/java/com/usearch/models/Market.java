@@ -1,4 +1,4 @@
-package com.example.marcelo.usearch10.models;
+package com.usearch.models;
 
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;

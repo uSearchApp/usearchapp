@@ -1,4 +1,4 @@
-package com.example.marcelo.usearch10.factorys;
+package com.usearch.factorys;
 
 /**
  * Created by aroncastrocoelho on 24/05/17.

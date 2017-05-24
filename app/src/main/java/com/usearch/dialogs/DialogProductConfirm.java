@@ -1,4 +1,4 @@
-package com.example.marcelo.usearch10.dialogs;
+package com.usearch.dialogs;
 
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.marcelo.usearch10.R;
+import com.usearch.R;
 
 
 public class DialogProductConfirm extends DialogFragment {
