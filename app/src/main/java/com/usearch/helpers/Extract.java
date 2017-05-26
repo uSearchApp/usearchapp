@@ -1,6 +1,7 @@
 package com.usearch.helpers;
 
-import android.support.annotation.Nullable;
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.regex.Matcher;
@@ -8,8 +9,8 @@ import java.util.regex.Pattern;
 
 public class Extract {
 
-    private final static Pattern name = Pattern.compile("([A-Za-z ]{4,}[A-Za-z]{2,})");
-    private final static Pattern price = Pattern.compile("(\\d+[\\,\\.]{1}[0-9]{1,2})");
+    private final static Pattern name = Pattern.compile("([A-Z ]{4,}[A-Z]{2,})");
+    private final static Pattern price = Pattern.compile("(\\d+[,\\.]{1}[0-9]{1,2})");
 
     private final static int COUNT = 8;
 
@@ -80,18 +81,35 @@ public class Extract {
         testsPrice.clear();
     }
 
-    @Nullable
     public static String testPrice(String data){
         Matcher matcher = price.matcher(data);
 
         if (matcher.find()){
-            return matcher.group();
+            if ( matcher.groupCount() > 1 ){
+                float minPrice = 9999999.0f;
+                String rPrice = "";
+
+                for ( int i =0, len = matcher.groupCount(); i < len; i++){
+                    String price = matcher.group(i);
+                    float fPrice = Float.parseFloat(price);
+
+                    Log.e("price f", price);
+                    Log.e("sadas", "asd=-------------------------------------");
+                    if ( fPrice < minPrice ){
+                        minPrice = fPrice;
+                        rPrice = price;
+                    }
+                }
+
+                return rPrice;
+            }else {
+                return matcher.group();
+            }
         }
 
-        return null;
+        return "";
     }
 
-    @Nullable
     public static String testName(String data){
         Matcher nameMatcher = name.matcher(data);
 
@@ -99,7 +117,7 @@ public class Extract {
             return nameMatcher.group();
         }
 
-        return null;
+        return "";
     }
 
 }

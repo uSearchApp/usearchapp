@@ -134,10 +134,17 @@ public class SurfaceOCR extends android.support.v4.app.Fragment {
                 stringBuilder.append(item.getValue());
             }
 
-            String result = stringBuilder.toString();
+            final String result = stringBuilder.toString();
 
             String n = Extract.testName(result);
             String p = Extract.testPrice(result);
+
+            textView.post(new Runnable() {
+                @Override
+                public void run() {
+                    textView.setText(result);
+                }
+            });
 
             if ( extract.fully() ){
                 String name = extract.getName();

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:background="#fff"
-    tools:context="com.example.marcelo.usearch10.MainActivity">
+    tools:context="com.usearch.MainActivity">
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/btnHistory"
@@ -16,6 +16,7 @@
         app:layout_anchor="@+id/content"
         app:layout_anchorGravity="bottom|right"
         app:backgroundTint="#8B0000"
+        android:visibility="gone"
         android:layout_margin="16dp"/>
 
     <LinearLayout
@@ -28,17 +29,23 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".5"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_weight="1"/>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/historyRecycler"
-            android:layout_below="@id/container"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".5"/>
+            android:layout_weight="0.2">
+
+            <include layout="@layout/warning_empty" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/historyRecycler"
+                android:layout_below="@id/container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

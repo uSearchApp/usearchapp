@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.marcelo.usearch10.History">
+    tools:context="com.usearch.History">
 
     <include layout="@layout/toolbar" />
 

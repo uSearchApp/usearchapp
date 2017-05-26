@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/warningEmpty"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/iconEmpty"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            app:iiv_color="#ccc"
+            app:iiv_icon="faw-search" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconEmpty"
+            android:layout_marginTop="10dp"
+            android:text="Você ainda não realizou nenhuma pesquisa"
+            android:textAlignment="center"
+            android:textColor="#ccc"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -55,6 +55,7 @@ public class DialogProductConfirm extends DialogFragment {
         edtPrice.setText(txtPrice);
 
         getDialog().setTitle("Confirmar produto");
+        getDialog().setCancelable(false);
 
         btnAgain.setOnClickListener(new View.OnClickListener() {
             @Override

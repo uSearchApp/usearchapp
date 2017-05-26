@@ -26,4 +26,36 @@ public class Market extends RealmObject {
 
     private double longitude;
 
+    public String getName(){
+        return name;
+    }
+
+    public String getStreet(){
+        return street;
+    }
+
+    public String getDistrict(){
+        return district;
+    }
+
+    public String getCity(){
+        return city;
+    }
+
+    public String getState(){
+        return state;
+    }
+
+    public String getCountry(){
+        return country;
+    }
+
+    public double getLatitude(){
+        return latitude;
+    }
+
+    public double getLongitude(){
+        return longitude;
+    }
+
 }

@@ -13,6 +13,21 @@ public class Product extends RealmObject {
 
     private float price;
 
-    private String supermarcadoName;
+    private Market market;
 
+    public int getId(){
+        return id;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public float getPrice(){
+        return price;
+    }
+
+    public Market getMarket(){
+        return market;
+    }
 }
